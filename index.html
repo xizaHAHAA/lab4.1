@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>XizaStore</title>
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+
+  <header class="header">
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Каталог</a></li>
+<li><a href="info.html">Інформація</a></li>
+<li><a href="support.html">Підтримка</a></li>
+<li><a href="#">Спільнота</a></li>
+
+      </ul>
+      <div class="user">xizaHAHAA</div>
+    </nav>
+  </header>
+
+  <div class="divider"></div>
+
+  <section class="search-bar">
+    <input type="text" placeholder="Пошук">
+  </section>
+
+  <main class="main-content">
+    <section id="catalog">
+      <h2>Каталог найкращих товарів</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="images/stalker2.jpg" alt="Stalker 2">
+          <div class="price">599 <span class="discount">-50%</span></div>
+          <button>В кошик</button>
+        </div>
+        <div class="product">
+          <img src="images/reddead2.jpg" alt="Red Dead Redemption 2">
+          <div class="price">129 <span class="discount">-90%</span></div>
+          <button>В кошик</button>
+        </div>
+        <div class="product">
+          <img src="images/ghost.jpg" alt="Ghost of Tsushima">
+          <div class="price">1299 <span class="discount">-30%</span></div>
+          <button>В кошик</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="bottom-games">
+      <img src="images/hollowknight.jpg" alt="Hollow Knight">
+      <img src="images/deadbydaylight.jpg" alt="Dead by Daylight">
+      <img src="images/forzahorizon.jpg" alt="Forza Horizon 5">
+      <img src="images/hogwarts.jpg" alt="Hogwarts Legacy">
+      <img src="images/fc25.jpg" alt="FIFA 25">
+    </div>
+
+  
+
+  <footer>
+    <p>XizaStore</p>
+  </footer>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <p>Гра успішно додана у кошик!</p>
+      <p class="exit-hint">натисніть щоб вийти</p>
+    </div>
+  </div>
+
+  <script>
+    const buttons = document.querySelectorAll('button');
+    const modal = document.getElementById('modal');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        modal.style.display = 'flex';
+      });
+    });
+
+    modal.addEventListener('click', () => {
+      modal.style.display = 'none';
+    });
+    
+  </script>
+
+</body>
+</html>
+

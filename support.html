@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Підтримка — XizaStore</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Каталог</a></li>
+        <li><a href="info.html">Інформація</a></li>
+        <li><a href="support.html">Підтримка</a></li>
+        <li><a href="#">Спільнота</a></li>
+      </ul>
+      <div class="user">xizaHAHA</div>
+    </nav>
+  </header>
+
+  <main class="support">
+    <h2>Технічна підтримка</h2>
+    <button onclick="sendMessage('Проблема з покупкою')">Проблема з покупкою</button>
+    <button onclick="sendMessage('Ігри, програма..')">Ігри, програма..</button>
+    <button onclick="sendMessage('Реєстрація')">Реєстрація</button>
+    <button onclick="sendMessage('Мобільна версія')">Мобільна версія</button>
+
+    <p>В мене є інше запитання:</p>
+    <textarea id="other-question" rows="5"></textarea><br>
+    <button onclick="submitQuestion()">Надіслати</button>
+  </main>
+
+  <footer>
+    <p>XizaStore</p>
+  </footer>
+
+  
+</body>
+</html>
