@@ -76,18 +76,16 @@ body {
   }
   
   .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
   }
   
   .product {
-    background-color: #1c1c1c;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #000000aa;
+    margin: 10px;
+    text-align: center;
   }
+  
   
   .product img {
     width: 100%;
